@@ -5,8 +5,6 @@ entity Register_16 is
   Port(
     clk : in STD_LOGIC;
     load : in STD_LOGIC;
-    --clear?
-    --clear : in STD_LOGIC;
     input : in STD_LOGIC_VECTOR(15 downto 0);
     output : in STD_LOGIC_VECTOR(15 downto 0);
   );
