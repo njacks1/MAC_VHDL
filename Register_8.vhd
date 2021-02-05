@@ -8,7 +8,7 @@ entity Register_8 is
     input : in STD_LOGIC_VECTOR(7 downto 0);
     output : in STD_LOGIC_VECTOR(7 downto 0);
   );
-end Register_8
+end Register_8;
 
 architecture Behavioral of Register_8 is
 Signal storage : STD_LOGIC_VECTOR(7 downto 0);
