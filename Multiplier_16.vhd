@@ -9,7 +9,7 @@ entity multiplier_16 is
            X : out STD_LOGIC_VECTOR (31 downto 0));
 end multiplier_16;
 
-architecture Behavioral of mux_2to1 is
+architecture Behavioral of multiplier_16 is
 begin
     process(A, B)
       begin
