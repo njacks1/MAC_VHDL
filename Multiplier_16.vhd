@@ -10,9 +10,9 @@ entity multiplier_16 is
 end multiplier_16;
 
 architecture Behavioral of multiplier_16 is
-begin
-    process(A, B)
-      begin
-        X <= A*B;
-      end process;
-end Behavioral;
+        begin
+            process(A, B)
+              begin
+                X <= A*B;
+              end process;
+        end Behavioral;
