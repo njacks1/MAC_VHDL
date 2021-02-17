@@ -6,8 +6,7 @@ entity Register_8 is
     clk : in STD_LOGIC;
     load : in STD_LOGIC;
     input : in STD_LOGIC_VECTOR(7 downto 0);
-    output : in STD_LOGIC_VECTOR(7 downto 0);
-  );
+    output : in STD_LOGIC_VECTOR(7 downto 0));
 end Register_8;
 
 architecture Behavioral of Register_8 is
