@@ -1,15 +1,15 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity Register_16 is
+entity Register16 is
   Port(
     clk : in STD_LOGIC;
     load : in STD_LOGIC;
     input : in STD_LOGIC_VECTOR(15 downto 0);
     output : in STD_LOGIC_VECTOR(15 downto 0));
-end Register_16;
+end Register16;
 
-architecture Behavioral of Register_16 is
+architecture Behavioral of Register16 is
 Signal storage : STD_LOGIC_VECTOR(15 donwto 0);
 begin
   process(clk, input, load)
