@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity adder_subtractor is
+entity AdderSubtractor is
     Port ( AMF : in  STD_LOGIC;
            P   : in  STD_LOGIC_VECTOR (31 downto 0);
            MR   : in  STD_LOGIC_VECTOR (39 downto 0);
@@ -9,9 +9,9 @@ entity adder_subtractor is
            R2   : out STD_LOGIC_VECTOR (7 downto 0);
            R1   : out STD_LOGIC_VECTOR (15 downto 0);
            R0   : out STD_LOGIC_VECTOR (15 downto 0));
-end adder_subtractor;
+end AdderSubtractor;
 
-architecture Behavioral of adder_subtractor is
+architecture Behavioral of AdderSubtractor is
     signal accum : STD_LOGIC_VECTOR(39 downto 0);
 
     begin
@@ -39,5 +39,5 @@ architecture Behavioral of adder_subtractor is
 
         R2 <= accum(39 downto 32);
         R1 <= accum(31 downto 16);
-        R0 <= accum(15 downto 0);    
+        R0 <= accum(15 downto 0);
     end Behavioral;
