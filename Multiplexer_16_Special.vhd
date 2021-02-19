@@ -11,13 +11,16 @@ end Multiplexer_3to1_16;
 
 architecture Behavioral of Multiplexer_3to1_16 is
 begin
-    if(SEL == "00") then
+  process(SEL, A, B, C)
+    begin
+    if(SEL = "00") then
         X <= A;
-    elsif (SEL == "01") then
+    elsif (SEL = "01") then
         X <= B;
-    elsif (SEL == "10") then
+    elsif (SEL = "10") then
         X <= "00000000" & C;
     else
         X <= "ZZZZZZZZZZZZZZZZ";
     end if;
+  end process;
 end Behavioral;
