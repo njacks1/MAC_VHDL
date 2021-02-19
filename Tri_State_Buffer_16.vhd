@@ -7,6 +7,7 @@ entity TriStateBuffer16 is
            output : out STD_LOGIC_VECTOR (15 downto 0));
 end TriStateBuffer16;
 
-architectural Behavioral of TriStateBuffer16 is
+architecture Behavioral of TriStateBuffer16 is
+begin
   output <= input when (en = '1') else "ZZZZZZZZZZZZZZZZ";
 end Behavioral;
