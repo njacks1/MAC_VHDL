@@ -1,5 +1,5 @@
 vsim -gui work.mac_complete_circuit
-# //  ModelSim PE Student Edition 10.4a Apr  7 2015 
+# //  ModelSim PE Student Edition 10.4a Apr  7 2015
 # //
 # //  Copyright 1991-2015 Mentor Graphics Corporation
 # //  All Rights Reserved.
@@ -17,7 +17,7 @@ vsim -gui work.mac_complete_circuit
 # // THE ModelSim PE Student Edition IS NOT A SUPPORTED PRODUCT.
 # // FOR HIGHER EDUCATION PURPOSES ONLY
 # //
-# vsim -gui 
+# vsim -gui
 # Start time: 02:23:14 on Feb 19,2021
 # Loading std.standard
 # Loading std.textio(body)
@@ -39,14 +39,14 @@ vsim -gui work.mac_complete_circuit
 # Expect performance to be quite adversely affected.
 add wave -position end sim:/mac_complete_circuit/*
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-# 
+#
 #           File in use by: nicho  Hostname: DESKTOP-9IRNJG6  ProcessID: 7584
-# 
+#
 #           Attempting to use alternate WLF file "./wlfty074mq".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-# 
+#
 #           Using alternate file: ./wlfty074mq
-# 
+#
 force -freeze sim:/mac_complete_circuit/CLK 1 0, 0 {50 ns} -r 100
 force -freeze sim:/mac_complete_circuit/REGISTERLOAD 8'hF9 0
 force -freeze sim:/mac_complete_circuit/S 10'h0F2 0
