@@ -14,6 +14,7 @@ entity AdderSubtractor is
            R2   : out STD_LOGIC_VECTOR (7 downto 0);
            R1   : out STD_LOGIC_VECTOR (15 downto 0);
            R0   : out STD_LOGIC_VECTOR (15 downto 0));
+           --test 2
 end AdderSubtractor;
 
 architecture Behavioral of AdderSubtractor is
