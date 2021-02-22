@@ -4,6 +4,8 @@ use IEEE.NUMERIC_STD.all;
 use IEEE.STD_LOGIC_ARITH.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
+--in the simualtion branch
+
 entity AdderSubtractor is
     Port ( AMF : in  STD_LOGIC_VECTOR(4 downto 0);
            P   : in  STD_LOGIC_VECTOR (31 downto 0);
